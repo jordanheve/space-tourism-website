@@ -208,7 +208,7 @@
       width: 0;
       padding-top: 8em;
       visibility: hidden;
-      transition: all .5s;
+      transition: all .3s;
     }
   
     .navlist {
