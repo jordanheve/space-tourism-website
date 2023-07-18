@@ -27,7 +27,7 @@ export const DestinationSlider = () => {
         {destinations.map((item) => (
           <li className='slider-element' key={item.name}>
             <div>
-            <img className='destination-img' src={`${item.images.png}`} />
+            <img className='destination-img' src={`${item.images.png}`} alt={item.name} />
             </div>
             <div className='destination-info'>
             <h2 className='destination-info__title'>{item.name}</h2>

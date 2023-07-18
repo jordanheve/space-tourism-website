@@ -18,8 +18,8 @@ export const TechnologySlider = () => {
         {technology.map((item) => (
           <li className='slider-element' key={item.name}>
             <div>
-            <img className='technology-img' src={`${item.images.portrait}`} />
-            <img className='technology-img--mobile'src={`${item.images.landscape}`}></img>
+            <img className='technology-img' src={`${item.images.portrait}`} alt={item.name} />
+            <img className='technology-img--mobile'src={`${item.images.landscape}`} alt={item.name}></img>
             </div>
             <div className='technology-info'>
             <p className='technology-info__terminology'>The terminology...</p>

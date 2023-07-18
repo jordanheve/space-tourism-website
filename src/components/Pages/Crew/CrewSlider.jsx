@@ -21,7 +21,7 @@ export const CrewSlider = () => {
         {crew.map((item) => (
           <li className='slider-element' key={item.name}>
             <div className='crew-img-container'>
-            <img className='crew-img' src={`${item.images.png}`} />
+            <img className='crew-img' src={`${item.images.png}`} alt={item.name}/>
             </div>
             <div className='crew-info'>
             <p className='crew-info__role'>{item.role}</p>
