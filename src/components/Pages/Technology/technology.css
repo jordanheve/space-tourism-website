@@ -1,0 +1,114 @@
+.technology .slider-bullets-item {
+    background-color: transparent !important;
+    border: 1px solid var(--pale-frosty-blue);
+    padding: 0!important;
+    height: 3.4em !important;
+    width: 3.4em !important;
+    display: grid;
+    place-content: center;
+    color: var(--pale-frosty-blue);
+    text-indent: 0 !important;
+    font-size: 1.6em;
+    transform: none !important;
+    padding-bottom: .5em;
+    text-transform: uppercase;
+    font-family: "Bellefair";
+  }
+  
+  .technology .slider-element {
+    flex-direction: row-reverse;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: center;
+    height: 34em;
+  }
+  
+  .technology .slider-bullets-item.active {
+    color: var(--dark-midnight-blue);
+    background-color: var(--pale-frosty-blue) !important;
+  }
+  
+  .technology {
+    width: 100vw;
+  }
+  
+  .technology .slider-wrapper {
+    grid-area: "slide-item";
+  }
+  
+  .technology .slider-bullets {
+    flex-direction: column;
+    position: absolute;
+    top: 5.5em;
+    gap: 1em;
+  }
+  
+  .technology-info {
+    max-width: 34em;
+  }
+  
+  .technology-info__terminology {
+    font-size: "Barlow Condensed";
+    color: var(--pale-frosty-blue);
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+  
+  .technology-info__name {
+    font-family: "Bellefair";
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 4em;
+    color: var(--white);
+    margin: .2em 0;
+  }
+  
+  .technology-img--mobile {
+    display: none;
+  }
+  
+  @media (max-width: 1200px) {
+    .technology .slider-element {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 3em;
+      height: auto;
+      justify-content: space-between;
+      height: fit-content;
+      width: 100vw;
+    }
+  
+    .technology-img {
+      display: none;
+    }
+  
+    .technology-img--mobile {
+      display: unset;
+      height: 13em;
+      margin-bottom: 3em;
+    }
+  
+    .technology .slider-bullets {
+      flex-direction: row;
+      width: 100%;
+      top: 13em;
+    }
+  
+    .technology .slider-bullets-item {
+      width: 2em;
+      height: 2em;
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 764px) {
+    .technology-info__terminology {
+      font-size: 1.2em;
+    }
+  
+    .technology-info__name {
+      font-size: 2.2em;
+    }
+  }
+  

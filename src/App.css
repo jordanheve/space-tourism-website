@@ -1,0 +1,234 @@
+.header {
+    position: absolute;
+    top: 2em;
+    right: 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 3fr;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .navbar {
+    backdrop-filter: blur(5em);
+    height: 6em;
+    background-color: var(--pale-frosty-blue-t);
+    text-transform: uppercase;
+  }
+  
+  .navlist {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+  
+  .nav-number {
+    font-weight: 600;
+  }
+  
+  .navlink a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    letter-spacing: .1em;
+    font-family: "Barlow Condensed";
+  }
+  
+  .navlink a:hover,
+  .navlink > .active {
+    box-shadow: inset 0 -0.3em var(--pale-frosty-blue);
+  }
+  
+  .header__line {
+    height: .1em;
+    background-color: var(--pale-frosty-blue-t);
+    margin-right: -2em;
+    z-index: 2;
+  }
+  
+  .logo {
+    margin: auto;
+  }
+  
+  .logo img {
+    height: 2.9em;
+  }
+  
+  section {
+    width: 100vw;
+    max-width: 90em;
+    padding: 1.5em;
+  }
+  
+  .home {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 75vh;
+  }
+  
+  .home-article {
+    max-width: 32em;
+  }
+  
+  .explore-btn {
+    border: none;
+    background-color: var(--pale-frosty-blue);
+    font-family: "Bellefair";
+    font-size: 3em;
+    height: 7em;
+    width: 7em;
+    border-radius: 50%;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    transition: ease-in-out .4s;
+  }
+  
+  .explore-btn a {
+    text-decoration: none;
+    color: var(--dark-midnight-blue);
+  }
+  
+  .explore-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 1em var(--pale-frosty-blue-t);
+    transform: scale(1.1);
+  }
+  
+  .main {
+    background-image: url("../src/assets/home/background-home-desktop.jpg");
+    height: 100vh;
+    min-height: 45em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: ease-in .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 5em;
+  }
+  
+  .main.destination {
+    background-image: url("../src/assets/destination/background-destination-desktop.jpg");
+  }
+  
+  .main.crew {
+    background-image: url("../src/assets/crew/background-crew-desktop.jpg");
+  }
+  
+  .main.technology {
+    background-image: url("../src/assets/technology/background-technology-desktop.jpg");
+  }
+  
+  .main.home {
+    background-image: url("../src/assets/home/background-home-desktop.jpg");
+  }
+  
+  @media (max-width: 1200px) {
+    .main.home {
+      background-image: url("../src/assets/home/background-home-tablet.jpg");
+    }
+    
+    .main.destination {
+        background-image: url("../src/assets/destination/background-destination-tablet.jpg");
+      }
+      
+      .main.crew {
+        background-image: url("../src/assets/crew/background-crew-tablet.jpg");
+      }
+      
+      .main.technology {
+        background-image: url("../src/assets/technology/background-technology-tablet.jpg");
+      }
+    .home {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 6em;
+      justify-content: start;
+    }
+  
+    .slider-wrapper {
+      text-align: center;
+    }
+  
+    .navlist {
+      gap: auto;
+    }
+  
+    .header__line {
+      visibility: hidden;
+    }
+  
+    .explore-btn {
+      width: 6em;
+      height: 6em;
+    }
+  
+    .main.destination {
+      min-height: 1080px;
+      overflow-y: visible;
+      background-image: url("../src/assets/destination/background-destination-tablet.jpg");
+    }
+  
+    .nav-number {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+
+    .main.home {
+        background-image: url("../src/assets/home/background-home-mobile.jpg");
+      }
+      
+    .main.destination {
+        background-image: url("../src/assets/destination/background-destination-mobile.jpg");
+    }
+        
+    .main.crew {
+        background-image: url("../src/assets/crew/background-crew-mobile.jpg");
+    }
+        
+    .main.technology {
+        background-image: url("../src/assets/technology/background-technology-mobile.jpg");
+    }
+
+    .navbar {
+      height: 100vh;
+      top: 0;
+      right: 0;
+      position: fixed;
+      width: 0;
+      padding-top: 8em;
+      visibility: hidden;
+      transition: all .5s;
+    }
+  
+    .navlist {
+      flex-direction: column;
+      align-items: center;
+      height: 40vh;
+    }
+  
+    .navlink {
+      width: fit-content;
+      height: 3em;
+    }
+  
+    .navbar.active {
+      visibility: visible;
+      width: 60vw;
+    }
+  
+    .navlink > .active {
+      box-shadow: inset 0 -0.15em var(--pale-frosty-blue);
+    }
+  }
+  
