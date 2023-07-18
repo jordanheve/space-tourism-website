@@ -58,7 +58,7 @@ export const AppRouter = () => {
       {/*Config routes */}
       <main className={"main " + location}>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/space-tourism-website" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/destination" element={<Destination />} />
         <Route path="/crew" element={<Crew />} />
