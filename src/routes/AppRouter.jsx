@@ -17,7 +17,7 @@ export const AppRouter = () => {
       {/*Navigation Menu */}
       <header className="header">
       <div className="logo">
-      <img src={logo}/>
+      <img src={logo} alt="logo"/>
       </div>
       <div className="header__line"></div>
         <nav className={"navbar " + ((checkValue) ? "active" : "")}>
