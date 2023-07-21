@@ -1,5 +1,5 @@
 .header {
-    position: absolute;
+    position: fixed;
     top: 2em;
     right: 0;
     display: grid;

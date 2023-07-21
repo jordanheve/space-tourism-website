@@ -29,7 +29,7 @@ body {
   min-height: 30em;
   background-color: var(--dark-midnight-blue);
   background-image: url("./assets/destination/background-destination-desktop.jpg");
-  font-size: 16px;
+  font-size: 15px;
   transition: all 1s;
   color: var(--pale-frosty-blue)
 }
@@ -37,7 +37,7 @@ body {
 .title {
   font-family: "Barlow";
   font-weight: lighter;
-  font-size: 2.3rem;
+  font-size: 2.3em;
   text-transform: uppercase;
   color: var(--pale-frosty-blue);
 }
@@ -85,7 +85,6 @@ body {
     margin-bottom: 1em;
   }
 }
-
 
 @media (max-width:764px){
   .title {

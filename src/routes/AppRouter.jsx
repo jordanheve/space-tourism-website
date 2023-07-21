@@ -1,4 +1,4 @@
-import { Routes, Route, NavLink, useLocation } from "react-router-dom";
+import { Routes, Route, NavLink, useLocation, Link } from "react-router-dom";
 import { Technology } from "../components/Pages/Technology/Technology";
 import { Error } from "../components/Error404";
 import { Destination } from "../components/Pages/Destination/Destination";
@@ -16,9 +16,9 @@ export const AppRouter = () => {
     
       {/*Navigation Menu */}
       <header className="header">
-      <div className="logo">
+      <Link className="logo" to='/home'>
       <img src={logo} alt="logo"/>
-      </div>
+      </Link>
       <div className="header__line"></div>
         <nav className={"navbar " + ((checkValue) ? "active" : "")}>
           <ul className="navlist"  onClick={() => setCheckValue(false)}>
